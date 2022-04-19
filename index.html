@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="todolist.css">
-    <script src="todolist.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script> 
     <title>todolist</title>
 </head>
 <body>
-<div id="back" class="header">
-    <h2>My To Do List</h2>
-      <input type="text" class="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span> </div>
-     <Ul class="Mylist">
-      <li class="checked">Monday</li>
-      <li>Tuesday</li>
-      <li>Wednesday</li>
-      <li>Saterday</li>
-      <li>Sunday</li>
-    </Ul>
+   <h2>ToDo List</h2>
+     <div class="container"> 
+       <div class="header">Task description</div>
+        <input type="text" placeholder="New task...">
+         <button class="button">Add</button>
+          <div class="filter">Filters</div>
+           <div class="filters">
+            <div class="all">All</div>
+            <div class="active">Active</div>
+            <div class="complited">Complited</div>
+          </div>
+               <div class="fil">FILTERS</div>
+                 <ul id="tasks">
+                  <li class="list"><input class="task" type="checkbox"> <label>To school</to> <button class="delete1" class=>&#10060</button>
+                  <li class="list"><input class="task" type="checkbox"> <label>To home</to> <button class="delete2">&#10060</button>
+                  <li class="list"><input class="task" type="checkbox"> <label>Go for a walk</to> <button class="delete3">&#10060</button>
+                  <li class="list"><input class="task" type="checkbox"> <label>Go to moms</to> <button class="delete4">&#10060</button>
+                  <li class="list"><input class="task" type="checkbox"> <label>To do hometasks</to> <button class="delete5">&#10060</button>
+                </ul>
+
+              
+      </div>
+
 </body>
 </html>
