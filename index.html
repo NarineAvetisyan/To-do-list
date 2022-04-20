@@ -5,32 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script> 
+    <script src="index.js"></script>
     <title>todolist</title>
 </head>
 <body>
-   <h2>ToDo List</h2>
-     <div class="container"> 
-       <div class="header">Task description</div>
-        <input type="text" placeholder="New task...">
-         <button class="button">Add</button>
-          <div class="filter">Filters</div>
-           <div class="filters">
-            <div class="all">All</div>
-            <div class="active">Active</div>
-            <div class="complited">Complited</div>
-          </div>
-               <div class="fil">FILTERS</div>
-                 <ul id="tasks">
-                  <li class="list"><input class="task" type="checkbox"> <label>To school</to> <button class="delete1" class=>&#10060</button>
-                  <li class="list"><input class="task" type="checkbox"> <label>To home</to> <button class="delete2">&#10060</button>
-                  <li class="list"><input class="task" type="checkbox"> <label>Go for a walk</to> <button class="delete3">&#10060</button>
-                  <li class="list"><input class="task" type="checkbox"> <label>Go to moms</to> <button class="delete4">&#10060</button>
-                  <li class="list"><input class="task" type="checkbox"> <label>To do hometasks</to> <button class="delete5">&#10060</button>
-                </ul>
+<h2>ToDo List</h2>
+<div class="container">
+    <div class="input_container">
+        <label> Task description
+            <input type="text" placeholder="New task...">
+        </label>
+        <button class="button">Add</button>
 
-              
-      </div>
+    </div>
+    <div class="filter">Filters</div>
+    <div class="filters">
+        <div class="filters_all">All</div>
+        <div class="filters_active">Active</div>
+        <div class="filters_complited">Complited</div>
+    </div>
+    <ul id="tasks">
+        <li class="list"><label><input class="task" type="checkbox"> To school</label>
+            <button class="delete1" class=>&#10060</button>
+        </li>
+        <li class="list"><label><input class="task" type="checkbox"> To home</label>>
+            <button class="delete2">&#10060</button>
+        </li>
+        <li class="list"><label><input class="task" type="checkbox"> o for a walk</label>
+            <button class="delete3">&#10060</button>
+        </li>
+        <li class="list"><label><input class="task" type="checkbox"> Go to moms</label>
+            <button class="delete4">&#10060</button>
+        </li>
+        <li class="list"><label><input class="task" type="checkbox"> To do hometasks</label>
+            <button class="delete5">&#10060</button>
+        </li>
+    </ul>
+
+
+</div>
 
 </body>
 </html>
