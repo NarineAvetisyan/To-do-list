@@ -110,7 +110,7 @@ h2 {
 }
 
 
-#tasks {
+.list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,13 +120,13 @@ h2 {
     margin-top: 10px;
 }
 
-.task {
+.list_task {
     margin-left: 30px;
     width: 15px;
     height: 15px;
 }
 
-.list {
+.list_item {
     height: 40px;
     border-radius: 5px;
     background-color: #e4e0e0;
@@ -136,40 +136,13 @@ h2 {
     align-items: center;
 
 }
+.list_item:hover .list_btn {
+     display: block;
 
-/*.delete1, .delete2, .delete3, .delete4, .delete5 {*/
-/*    height: 15px;*/
-/*    width: 15px;*/
-/*    font-size: 12px;*/
-/*    text-align: center;*/
-/*    background-color: rgb(216, 207, 207);*/
-/*    cursor: pointer;*/
-/*}*/
-
-/* display: none;
+}
+.list_btn {
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
 }
 
-.delete1:hover, .delete2:hover, .delete3:hover, .delete4:hover, .delete5:hover {
-display:inline ;
-}  */
-
-
-/*.delete1 {*/
-/*    margin-left: 470px;*/
-/*}*/
-
-/*.delete2 {*/
-/*    margin-left: 477px;*/
-/*}*/
-
-/*.delete3 {*/
-/*    margin-left: 445px;*/
-/*}*/
-
-/*.delete4 {*/
-/*    margin-left: 454px;*/
-/*}*/
-
-/*.delete5 {*/
-/*    margin-left: 425px;*/
-/*}*/

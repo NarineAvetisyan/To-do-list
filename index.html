@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    
     <title>todolist</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 <div class="container">
     <div class="input_container">
         <label> Task description
-            <input type="text" placeholder="New task...">
+            <input id="put" type="text" placeholder="New task...">
         </label>
         <button class="button">Add</button>
 
@@ -24,26 +24,26 @@
         <div class="filters_active">Active</div>
         <div class="filters_complited">Complited</div>
     </div>
-    <ul id="tasks">
-        <li class="list"><label><input class="task" type="checkbox"> To school</label>
-            <button class="delete1" class=>&#10060</button>
+    <ul class="list">
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To school</label>
+            <button class="list_btn" class=>&#10060</button>
         </li>
-        <li class="list"><label><input class="task" type="checkbox"> To home</label>>
-            <button class="delete2">&#10060</button>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To home</label>
+            <button class="list_btn">&#10060</button>
         </li>
-        <li class="list"><label><input class="task" type="checkbox"> o for a walk</label>
-            <button class="delete3">&#10060</button>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> Go for a walk</label>
+            <button class="list_btn">&#10060</button>
         </li>
-        <li class="list"><label><input class="task" type="checkbox"> Go to moms</label>
-            <button class="delete4">&#10060</button>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> Go to moms</label>
+            <button class="list_btn">&#10060</button>
         </li>
-        <li class="list"><label><input class="task" type="checkbox"> To do hometasks</label>
-            <button class="delete5">&#10060</button>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To do hometasks</label>
+            <button class="list_btn">&#10060</button>
         </li>
     </ul>
 
 
 </div>
-
+<script src="index.js"></script>
 </body>
 </html>
