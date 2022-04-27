@@ -1,17 +1,148 @@
 * {
     box-sizing: border-box;
-  }
-  
-  .header {
-      text-align: center;
-      background-color: aqua;
-      padding: 30px 40px;
-      color: rgb(219, 167, 22);
-  }
-
-input {
-    width: 80%;
-   padding: 5px;
-    border: none;
-    font-size: 16px;
+    margin: 0%;
+    padding: 0%;
 }
+
+
+body {
+    background-image: linear-gradient(to right, rgb(241, 237, 237), rgb(216, 216, 174));;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(54, 53, 53);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: aliceblue;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.input_container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.input_container label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.input_container input {
+
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.input_container button {
+    width: 10%;
+    height: 35px;
+    margin-left: 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    color: #d4e9ff;
+}
+
+.input_container .button:hover {
+    cursor: pointer;
+    background-color: #56595c;
+
+}
+
+.filter {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+    height: 35px;
+    width: 100%;
+    border-radius: 3px;
+    align-items: center;
+    align-content: flex-start;
+    background-color: #d4e9ff;
+}
+
+.filters_all {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.filters_complited {
+    margin-left: 20px;
+}
+
+.filters_all:hover, .filters_active:hover, .filters_complited:hover {
+    border-radius: 3px;
+    width: 30px;
+    height: 32px;
+    background-color: #007bff;
+    text-align: center;
+    color: azure;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.filters_active:hover {
+    width: 70px;
+}
+
+.filters_complited:hover {
+    width: 80px;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    list-style-type: none;
+    list-style-position: outside;
+    margin-top: 10px;
+}
+
+.list_task {
+    margin-left: 30px;
+    width: 15px;
+    height: 15px;
+}
+
+.list_item {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e4e0e0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.list_item:hover .list_btn {
+     display: block;
+
+}
+.list_btn {
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+

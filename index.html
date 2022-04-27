@@ -4,21 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="todolist.css">
-    <script src="todolist.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    
     <title>todolist</title>
 </head>
 <body>
-<div id="back" class="header">
-    <h2>My To Do List</h2>
-      <input type="text" class="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span> </div>
-     <Ul class="Mylist">
-      <li class="checked">Monday</li>
-      <li>Tuesday</li>
-      <li>Wednesday</li>
-      <li>Saterday</li>
-      <li>Sunday</li>
-    </Ul>
+<h2>ToDo List</h2>
+<div class="container">
+    <div class="input_container">
+        <label> Task description
+            <input id="put" type="text" placeholder="New task...">
+        </label>
+        <button class="button">Add</button>
+
+    </div>
+    <div class="filter">Filters</div>
+    <div class="filters">
+        <div class="filters_all">All</div>
+        <div class="filters_active">Active</div>
+        <div class="filters_complited">Complited</div>
+    </div>
+    <ul class="list">
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To school</label>
+            <button class="list_btn" class=>&#10060</button>
+        </li>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To home</label>
+            <button class="list_btn">&#10060</button>
+        </li>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> Go for a walk</label>
+            <button class="list_btn">&#10060</button>
+        </li>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> Go to moms</label>
+            <button class="list_btn">&#10060</button>
+        </li>
+        <li class="list_item"><label><input class="list_task" type="checkbox"> To do hometasks</label>
+            <button class="list_btn">&#10060</button>
+        </li>
+    </ul>
+
+
+</div>
+<script src="index.js"></script>
 </body>
 </html>
