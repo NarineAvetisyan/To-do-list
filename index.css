@@ -57,7 +57,7 @@ h2 {
     color: #d4e9ff;
 }
 
-.input_container .button:hover {
+.input_container .btn:hover {
     cursor: pointer;
     background-color: #56595c;
 
@@ -124,6 +124,7 @@ h2 {
     margin-left: 30px;
     width: 15px;
     height: 15px;
+    margin-right: 10px;
 }
 
 .list_item {
@@ -136,13 +137,17 @@ h2 {
     align-items: center;
 
 }
+
 .list_item:hover .list_btn {
      display: block;
-
 }
+
 .list_btn {
     margin-right: 10px;
     cursor: pointer;
     display: none;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
