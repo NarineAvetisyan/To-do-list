@@ -14,6 +14,9 @@ function addItem () {
        let btn = document.createElement("button")
        btn.innerHTML="&#10060"
        btn.setAttribute("class", "list_btn")
+       btn.addEventListener("click", function(){
+           list.removeChild(list.firstElementChild);
+       })
        let check = document.createElement("input")
        check.type = "checkbox"
        check.setAttribute("class", "list_task")
@@ -25,9 +28,9 @@ function addItem () {
        elem.appendChild(btn)
        
 
-     label.addEventListener("cklick", function (){
-         label.classList.toggle("line-through")
-     })
+      label.addEventListener("click", function(){
+        label.classList.toggle("line-through");
+    })
      inputValue.value = ""
 }
 
@@ -41,3 +44,45 @@ inputValue.addEventListener("keypress", function(event){
        event.preventDefault();
        addItem()
     }})
+
+
+    let filter = document.querySelector(".filters")
+    let allFilter = document.querySelector(".filters_all");
+    let activeFilter = document.querySelector(".filters_active");
+    let completedFilter = document.querySelector(".filters_completed");
+
+
+allFilter = document.createElement("button");
+allFilter.setAttribute("class", "filters_all");
+allFilter.innerHTML = "All"
+
+activeFilter = document.createElement("button");
+activeFilter.setAttribute("class", "filters_active");
+activeFilter.innerHTML = "Active"
+
+completedFilter = document.createElement("button");
+completedFilter.setAttribute("class", "filters_completed");
+completedFilter.innerHTML = "Completed"
+
+filter.prepend(allFilter)
+filter.appendChild(activeFilter)
+filter.appendChild(completedFilter)
+
+allFilter.addEventListener("click", function(event){
+    console.log("dsada");
+})
+
+activeFilter.addEventListener("click", function(){
+    console.log("dsada");
+})
+
+completedFilter.addEventListener("cklick", function(){
+    console.log("dgfdgsada")
+})
+
+
+
+
+
+
+
