@@ -17,8 +17,22 @@ function addItem () {
        btn.addEventListener("click", function(){
            list.removeChild(list.firstElementChild);
        })
+       
        let check = document.createElement("input")
-       check.type = "checkbox"
+       check.type = "checkbox";
+       check.value = false;
+       check.addEventListener("change", function(event){
+           if (event.currentTarget.checked){
+               check.value = true
+               label.style.textDecoration = "line-through"
+             
+           }
+           else {
+               check.value = false;
+               label.style.textDecoration = "none"
+               
+           }
+       })
        check.setAttribute("class", "list_task")
        label.innerHTML = inputValue.value 
       
@@ -26,11 +40,8 @@ function addItem () {
        elem.prepend(label)
        label.prepend(check)
        elem.appendChild(btn)
-       
-
-      label.addEventListener("click", function(){
-        label.classList.toggle("line-through");
-    })
+    
+     
      inputValue.value = ""
 }
 
@@ -69,17 +80,23 @@ filter.appendChild(activeFilter)
 filter.appendChild(completedFilter)
 
 allFilter.addEventListener("click", function(event){
-    console.log("dsada");
+    addFilters("all");
 })
 
 activeFilter.addEventListener("click", function(){
-    console.log("dsada");
+    addFilters("active");
 })
 
-completedFilter.addEventListener("cklick", function(){
-    console.log("dgfdgsada")
+completedFilter.addEventListener("click", function(){
+    addFilters ("completed")
 })
 
+function addFilters (value) {
+
+    
+
+ console.log("list")
+}
 
 
 
