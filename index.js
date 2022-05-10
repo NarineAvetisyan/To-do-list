@@ -15,7 +15,8 @@ function addItem () {
        btn.innerHTML="&#10060"
        btn.setAttribute("class", "list_btn")
        btn.addEventListener("click", function(){
-           list.removeChild(list.firstElementChild);
+           list.removeChild(elem);
+           
        })
        
        let check = document.createElement("input")
