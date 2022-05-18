@@ -85,28 +85,29 @@ function addItem () {
 
 
     function addFilters(value) {
-    let lis = list.getElementsByTagName('li');
-    let checkI = document.querySelector(".list_task").value;
-    for (let i = 0; i < lis.length; i++){
+    let listI = list.getElementsByTagName('li');
+    
+    for (let i = 0; i < listI.length; i++){
+      let checkI = listI[i].querySelector(".list_task").value; 
         switch (value) {
             case "all":
-                if(checkI.value === "true" || "false"){
-                  lis[i].style.display = ""
+                if(checkI === "true" || "false"){
+                  listI[i].style.display = "flex"
                 }
                 console.log(checkI)
               break;
             
               case "active":
-                if (checkI.value === 'false') {
-                 lis[i].style.display = ".list_task";
-                } else {lis[i].style.display = "none"}
+                if (checkI === 'false') {
+                  listI[i].style.display = "flex";
+                } else {listI[i].style.display = "none"}
                 console.log(checkI)
               break;
            
               case "completed":
-                if (checkI.value === 'true') {
-                  lis[i].style.display = ".list_task";;
-                } else {lis[i].style.display = "none"}
+                if (checkI === 'true') {
+                  listI[i].style.display = "flex";
+                } else {listI[i].style.display = "none"}
                 console.log(checkI)
 
           }
